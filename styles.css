@@ -101,9 +101,13 @@ tr.fuzzy-result td {
 
 /* Highlight search matches */
 mark {
-    background: var(--primary);
-    color: white;
+    background: var(--pico-primary);
+    color: var(--pico-primary-inverse);
     padding: 0.1em 0.2em;
     border-radius: 0.2em;
     font-weight: bold;
+}
+
+a mark {
+    color: var(--pico-primary-inverse) !important;
 }

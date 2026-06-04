@@ -2,7 +2,7 @@
 const REDIRECTS = {
   'code': {
     url: 'https://github.com/gdmcdonald/jinx',
-    description: 'Gihub repository for Jinx'
+    description: 'GitHub repository for Jinx'
   },
 };
 
