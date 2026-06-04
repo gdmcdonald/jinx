@@ -8,10 +8,7 @@
     <script>
       document.title = CONFIG.title;
       document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.' + (CONFIG.accentColor || 'violet') + '.min.css">');
-      if (CONFIG.simpleAnalytics) {
-        document.write('<script async src="https://scripts.simpleanalyticscdn.com/latest.js"><\/script>');
-      }
-      if (CONFIG.goatCounter) {
+if (CONFIG.goatCounter) {
         document.write('<script>window.goatcounter={path:function(p){return location.host+p}}<\/script>');
         document.write('<script data-goatcounter="https://' + CONFIG.goatCounter + '.goatcounter.com/count" async src="//gc.zgo.at/count.js"><\/script>');
       }

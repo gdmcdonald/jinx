@@ -60,7 +60,6 @@ const CONFIG = {
   repoName: "your-repo",             // your GitHub repo name
   accentColor: "violet",            // Pico CSS colour (see options in config.js)
   goatCounter: null,                // "mysite" for mysite.goatcounter.com, or null
-  simpleAnalytics: false,           // true to enable Simple Analytics
 };
 ```
 
@@ -77,5 +76,4 @@ Replace the contents of `REDIRECTS` with your own links (see format above).
 ### 4. Analytics (optional)
 
 - **GoatCounter**: create a free account at [goatcounter.com](https://www.goatcounter.com/), set `goatCounter` to your site name
-- **Simple Analytics**: set `simpleAnalytics: true`
-- Leave both as `null`/`false` for no analytics
+- Leave as `null` to disable analytics

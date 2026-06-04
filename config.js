@@ -29,8 +29,6 @@ const CONFIG = {
 
   // Analytics — GoatCounter site name (e.g. "jinx" for jinx.goatcounter.com)
   // Set to null to disable
-  goatCounter: null,
+  goatCounter: jinx,
 
-  // Analytics — Simple Analytics (set to true to enable, false/null to disable)
-  simpleAnalytics: false,
 };
