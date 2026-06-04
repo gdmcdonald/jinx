@@ -12,9 +12,9 @@ Navigate directly to a shortlink to be redirected:
 
 ## Searching the directory
 
-Visit [jinx.fyi](https://jinx.fyi) to browse all links. Search supports fuzzy matching and separator-insensitive queries (e.g. "gpu doc", "gpu-doc", and "gpudoc" all find `gpu/docs`). Powered by [MiniSearch](https://github.com/lucaong/minisearch) (MIT licence), self-hosted in `minisearch.js`.
+Visit [jinx.fyi](https://jinx.fyi) to browse all links. Search supports fuzzy matching and separator-insensitive queries (e.g. "my things", "my-things", and "mything" all find `my/things`). Powered by [MiniSearch](https://github.com/lucaong/minisearch) (MIT licence), self-hosted in `minisearch.js`.
 
-Pre-filter by appending a query param: `jinx.fyi?q=bio`
+Pre-filter by appending a query param: `jinx.fyi?q=git`
 
 ## QR codes
 
