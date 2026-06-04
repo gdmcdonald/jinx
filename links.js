@@ -28,7 +28,7 @@ const REDIRECTS = {
     url: 'https://github.com/nelsontky/gh-pages-url-shortener',
     description: 'Jinx was inspired by this other link shortener that used 404 redirects and github issues'
   },
-  'readme': {
+  'about': {
     url: 'https://github.com/gdmcdonald/jinx/blob/main/README.md',
     description: 'About Jinx, and how to host it on GitHub pages yourself'
   },

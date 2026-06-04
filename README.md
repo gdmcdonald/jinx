@@ -1,6 +1,6 @@
 # Jinx
 
-A minimalist, static URL shortener and link directory. Shortlinks redirect instantly via GitHub Pages; the index page lets you browse and search all links. Zero backend, zero database — just a JS file and a custom domain.
+A minimalist, static URL shortener and link directory. Shortlinks redirect instantly via GitHub Pages; the index page lets you browse and search all links. Zero backend, zero database — just a static website and a custom domain.
 
 ![Jinx Screenshot](jinx_screenshot.jpeg)
 
@@ -40,6 +40,14 @@ Shortlinks can be hierarchical — slashes in the key create nested paths:
 ```
 
 > **Note:** Every entry must be followed by a comma, including the one before your new entry. Missing commas will break all redirects.
+
+## Access control
+
+Jinx uses GitHub for access control. Who can add links? Anyone you give permission to commit in your GitHub repository. 
+
+## Price
+
+It's free, MIT open-source licence. Do with it what you will.
 
 ---
 
