@@ -36,7 +36,6 @@ const REDIRECTS = {
     url: 'https://github.com/gdmcdonald/jinx/fork',
     description: 'Make your own Jinx, to share your links'
   },
-  https://github.com/gdmcdonald/jinx/fork
 };
 
 // Template:
