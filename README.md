@@ -2,6 +2,8 @@
 
 A minimalist, static URL shortener and link directory. Shortlinks redirect instantly via GitHub Pages; the index page lets you browse and search all links. Zero backend, zero database — just a JS file and a custom domain.
 
+![Jinx Screenshot](jinx_screenshot.jpeg)
+
 ## Using shortlinks
 
 Navigate directly to a shortlink to be redirected:
