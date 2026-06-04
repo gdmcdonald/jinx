@@ -4,9 +4,13 @@ const REDIRECTS = {
     url: 'https://github.com/gdmcdonald/jinx',
     description: 'GitHub repository for Jinx'
   },
+  'edit': {
+    url: 'https://github.com/gdmcdonald/jinx/edit/main/links.js',
+    description: 'Edit the links, if you have permission in the repository'
+  },
   'goatcounter': {
     url: 'https://www.goatcounter.com/',
-    description: 'Goat Counter for privacy-aware ethical analytics, GDPR compliant'
+    description: 'Goat Counter for free, privacy-aware ethical analytics, GDPR compliant'
   },
   'important': {
     url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
