@@ -35,9 +35,8 @@ Edit [links.js](links.js) and add an entry to the `REDIRECTS` object:
 Shortlinks can be hierarchical — slashes in the key create nested paths:
 
 ```js
-"gpu":            { url: "...", description: "GPU cluster overview" },
-"gpu/docs":       { url: "...", description: "GPU cluster documentation" },
-"gpu/onboarding": { url: "...", description: "GPU onboarding guide" },
+"my/docs":       { url: "...", description: "Documentation" },
+"my/demo": { url: "...", description: "Live Demonstration" },
 ```
 
 > **Note:** Every entry must be followed by a comma, including the one before your new entry. Missing commas will break all redirects.
