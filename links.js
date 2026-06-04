@@ -4,9 +4,9 @@ const REDIRECTS = {
     url: 'https://github.com/gdmcdonald/jinx',
     description: 'GitHub repository for Jinx'
   },
-  'analytics': {
+  'goatcounter': {
     url: 'https://www.goatcounter.com/',
-    description: 'Goat Counter for page vieew tracking'
+    description: 'Goat Counter for privacy-aware ethical analytics, GDPR compliant'
   },
   'important': {
     url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
@@ -20,9 +20,9 @@ const REDIRECTS = {
     url: 'https://www.nayuki.io/page/qr-code-generator-library',
     description: 'QR Code generator library by Nayuki which makes the QR codes on the right ->'
   },
-  'fuzzy-search': {
+  'minisearch': {
     url: 'https://github.com/lucaong/minisearch',
-    description: 'Minisearch js library - powers the fuzzy search above ^'
+    description: 'Minisearch js library - powers the fuzzy text search above ^'
   },
   'inspired-by': {
     url: 'https://github.com/nelsontky/gh-pages-url-shortener',
