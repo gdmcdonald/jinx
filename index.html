@@ -6,7 +6,7 @@
     <title>Loading...</title>
     <script src="config.js"></script>
     <script>
-      document.title = CONFIG.title + (CONFIG.subtitle ? " · " + CONFIG.subtitle : "");
+      document.title = CONFIG.title;
       document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.' + (CONFIG.accentColor || 'violet') + '.min.css">');
       if (CONFIG.simpleAnalytics) {
         document.write('<script async src="https://scripts.simpleanalyticscdn.com/latest.js"><\/script>');
