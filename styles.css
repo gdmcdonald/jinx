@@ -1,0 +1,109 @@
+@media (min-height: 500px) {
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #table-scroll-container {
+        overflow-y: auto;
+        flex: 1;
+    }
+}
+
+#links-container {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#links-container thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--pico-card-background-color, var(--pico-background-color, Canvas));
+    box-shadow: 0 1px 0 var(--pico-table-border-color, currentColor);
+}
+
+#links-container td {
+    vertical-align: middle;
+}
+
+.col-shortcut {
+    white-space: nowrap;
+    width: 1%;
+}
+
+@media (max-width: 768px) {
+    .col-shortcut {
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.col-copy {
+    width: 1%;
+    text-align: center;
+}
+
+.copy-btn {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+    vertical-align: middle;
+}
+
+.copy-btn svg {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+.copy-btn:hover {
+    opacity: 1;
+}
+
+.favicon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* Toast notification for copy feedback */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--pico-secondary-background);
+    color: var(--pico-secondary-inverse);
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    transform: translateX(280px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+tr.fuzzy-result td {
+    opacity: 0.6;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--muted-color);
+}
+
+/* Highlight search matches */
+mark {
+    background: var(--primary);
+    color: white;
+    padding: 0.1em 0.2em;
+    border-radius: 0.2em;
+    font-weight: bold;
+}

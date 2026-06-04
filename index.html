@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <script src="config.js"></script>
+    <script>
+      document.title = CONFIG.title + (CONFIG.subtitle ? " · " + CONFIG.subtitle : "");
+      document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.' + (CONFIG.accentColor || 'violet') + '.min.css">');
+      if (CONFIG.simpleAnalytics) {
+        document.write('<script async src="https://scripts.simpleanalyticscdn.com/latest.js"><\/script>');
+      }
+      if (CONFIG.goatCounter) {
+        document.write('<script>window.goatcounter={path:function(p){return location.host+p}}<\/script>');
+        document.write('<script data-goatcounter="https://' + CONFIG.goatCounter + '.goatcounter.com/count" async src="//gc.zgo.at/count.js"><\/script>');
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="links.js"></script>
+</head>
+<body>
+    <main class="container" id="main-container">
+        <header>
+            <hgroup class="container" style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+                <h2 id="site-title" style="margin: 0;"></h2>
+                <a id="edit-link" href="#" target="_blank" style="white-space: nowrap;">✏️ Edit links</a>
+            </hgroup>
+            <!-- Search Section -->
+                <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Search links... (shortcut, description, or URL)"
+                        autocomplete="off"
+                    >
+                <span id="search-results-count"></span>
+            </div>
+        </header>
+
+
+
+
+
+
+        <div id="table-scroll-container">
+        <table id="links-container">
+            <thead>
+                <tr>
+                    <th>Shortlink</th>
+                    <th>Description</th>
+                    <th>Copy</th>
+                    <th>QR</th>
+                </tr>
+            </thead>
+            <tbody>
+            <!-- Links will be populated here -->
+            </tbody>
+        </table>
+        </div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>🔍 No links found matching your search.</p>
+            <p>Try searching for shortcuts, descriptions, or destination URLs.</p>
+        </div>
+
+    </main>
+
+    <script src="minisearch.js"></script>
+    <script src="qrcodegen.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Inject config into DOM after scripts load
+      const titleEl = document.getElementById('site-title');
+      titleEl.textContent = (CONFIG.emoji ? CONFIG.emoji + ' ' : '') + CONFIG.title + (CONFIG.subtitle ? ' ' + CONFIG.subtitle : '');
+
+      const editEl = document.getElementById('edit-link');
+      if (CONFIG.editUrl) {
+        editEl.href = CONFIG.editUrl;
+      } else {
+        editEl.style.display = 'none';
+      }
+    </script>
+</body>
+</html>

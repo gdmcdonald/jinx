@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+      // Compute base path before loading any scripts.
+      // On a custom domain (jinx.fyi/a/b) base = "/"
+      // On GitHub Pages (org.github.io/jinx/a/b) base = "/jinx/"
+      (function () {
+        var base = '/';
+        if (window.location.hostname.includes('github.io')) {
+          var repo = window.location.pathname.split('/')[1];
+          if (repo) base = '/' + repo + '/';
+        }
+
+        function loadScript(path, next) {
+          var s = document.createElement('script');
+          s.src = base + path;
+          if (next) s.onload = next;
+          document.head.appendChild(s);
+        }
+
+        // Chain: config → links → redirect
+        loadScript('config.js', function () {
+          // Inject analytics now that CONFIG is available
+          if (typeof CONFIG !== 'undefined') {
+            if (CONFIG.simpleAnalytics) loadScript('https://scripts.simpleanalyticscdn.com/latest.js');
+            if (CONFIG.goatCounter) {
+              window.goatcounter = { path: function (p) { return location.host + p; } };
+              loadScript('//gc.zgo.at/count.js');
+            }
+          }
+          loadScript('links.js', function () {
+            loadScript('redirect.js');
+          });
+        });
+      })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
