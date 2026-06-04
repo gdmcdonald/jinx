@@ -44,7 +44,7 @@ Shortlinks can be hierarchical — slashes in the key create nested paths:
 
 ---
 
-## White-labelling for your own org
+## White-labelling
 
 Fork this repo, then make two edits:
 
@@ -52,12 +52,12 @@ Fork this repo, then make two edits:
 
 ```js
 const CONFIG = {
-  title: "My Org",          // shown in header and browser tab
+  title: "My Links",        // shown in header and browser tab
   subtitle: "Quick Links",  // shown beside the title (or null)
   emoji: "🔗",              // decorative emoji (or null)
   editUrl: "https://github.com/your-org/your-repo/edit/main/links.js",
-  customDomain: "links.myorg.com",  // or null for GitHub Pages URL only
-  repoName: "your-repo",            // your GitHub repo name
+  customDomain: "links.example.com", // or null for GitHub Pages URL only
+  repoName: "your-repo",             // your GitHub repo name
   accentColor: "violet",            // Pico CSS colour (see options in config.js)
   goatCounter: null,                // "mysite" for mysite.goatcounter.com, or null
   simpleAnalytics: false,           // true to enable Simple Analytics
@@ -71,7 +71,7 @@ Replace the contents of `REDIRECTS` with your own links (see format above).
 ### 3. GitHub Pages setup
 
 - Enable GitHub Pages on your repo (Settings → Pages → Deploy from branch `main`)
-- If using a custom domain: add it in Settings → Pages → Custom domain, and set up a CNAME DNS record pointing to `your-org.github.io`
+- If using a custom domain: add it in Settings → Pages → Custom domain, and set up a CNAME DNS record pointing to `your-username.github.io`
 - Update the `CNAME` file to your custom domain (or delete it if not using one)
 
 ### 4. Analytics (optional)
