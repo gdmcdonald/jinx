@@ -8,13 +8,13 @@ const CONFIG = {
   // Displayed in the browser tab and page header
   title: "Jinx",
   // Subtitle shown next to the title in the header (set to null to hide)
-  subtitle: "Quick Links",
+  subtitle: "Just Links",
   // Emoji or icon string shown beside the title (set to null to hide)
   emoji: "🔗",
 
   // URL to your links.js file on GitHub (used for the "Edit links" button)
   // Set to null to hide the edit button
-  editUrl: "https://github.com/Sydney-Informatics-Hub/jinx/edit/main/links.js",
+  editUrl: "https://github.com/gdmcdonald/jinx/edit/main/links.js",
 
   // Your custom domain (must match CNAME file). Set to null if using GitHub Pages URL only.
   customDomain: "jinx.fyi",
