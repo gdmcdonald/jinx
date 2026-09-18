@@ -5,7 +5,7 @@ const REDIRECTS = {
     description: 'GitHub repository for Jinx'
   },
   'edit': {
-    url: 'https://github.com/gdmcdonald/jinx/edit/main/links.js',
+    url: 'https://github.com/gdmcdonald/jinx/edit/main/src/links.js',
     description: 'Edit the links, if you have permission in the repository'
   },
   'goatcounter': {

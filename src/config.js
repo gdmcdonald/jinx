@@ -14,7 +14,7 @@ const CONFIG = {
 
   // URL to your links.js file on GitHub (used for the "Edit links" button)
   // Set to null to hide the edit button
-  editUrl: "https://github.com/gdmcdonald/jinx/edit/main/links.js",
+  editUrl: "https://github.com/gdmcdonald/jinx/edit/main/src/links.js",
 
   // Your custom domain (must match CNAME file). Set to null if using GitHub Pages URL only.
   customDomain: "jinx.fyi",

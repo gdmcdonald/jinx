@@ -23,7 +23,7 @@
         }
 
         // Chain: config → links → redirect
-        loadScript('config.js', function () {
+        loadScript('src/config.js', function () {
           // Inject analytics now that CONFIG is available
           if (typeof CONFIG !== 'undefined') {
             if (CONFIG.simpleAnalytics) loadScript('https://scripts.simpleanalyticscdn.com/latest.js');
@@ -32,8 +32,8 @@
               loadScript('//gc.zgo.at/count.js');
             }
           }
-          loadScript('links.js', function () {
-            loadScript('redirect.js');
+          loadScript('src/links.js', function () {
+            loadScript('src/redirect.js');
           });
         });
       })();

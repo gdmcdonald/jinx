@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading...</title>
-    <script src="config.js"></script>
+    <script src="src/config.js"></script>
     <script>
       document.title = CONFIG.title;
       document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.' + (CONFIG.accentColor || 'violet') + '.min.css">');
@@ -13,8 +13,8 @@ if (CONFIG.goatCounter) {
         document.write('<script data-goatcounter="https://' + CONFIG.goatCounter + '.goatcounter.com/count" async src="//gc.zgo.at/count.js"><\/script>');
       }
     </script>
-    <link rel="stylesheet" href="styles.css">
-    <script>document.write('<script src="links.js?v=' + Date.now() + '"><\/script>')</script>
+    <link rel="stylesheet" href="src/styles.css">
+    <script>document.write('<script src="src/links.js?v=' + Date.now() + '"><\/script>')</script>
 </head>
 <body>
     <main class="container" id="main-container">
@@ -71,13 +71,13 @@ if (CONFIG.goatCounter) {
         Built with <a href="https://jinx.fyi" target="_blank" style="color:inherit">Jinx</a>
     </footer>
 
-    <script src="minisearch.js"></script>
-    <script src="qrcodegen.js"></script>
-    <script src="script.js"></script>
+    <script src="src/minisearch.js"></script>
+    <script src="src/qrcodegen.js"></script>
+    <script src="src/script.js"></script>
     <script>
       // Inject config into DOM after scripts load
       const titleEl = document.getElementById('site-title');
-      titleEl.innerHTML = '<img src="logo.png" alt="' + CONFIG.title + '" style="height:2em;vertical-align:middle;">' + (CONFIG.subtitle ? ' <span style="font-size:0.6em;font-weight:normal;opacity:0.6">· ' + CONFIG.subtitle + '</span>' : '');
+      titleEl.innerHTML = '<img src="img/logo.png" alt="' + CONFIG.title + '" style="height:2em;vertical-align:middle;">' + (CONFIG.subtitle ? ' <span style="font-size:0.6em;font-weight:normal;opacity:0.6">· ' + CONFIG.subtitle + '</span>' : '');
 
       const editEl = document.getElementById('edit-link');
       if (CONFIG.editUrl) {

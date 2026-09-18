@@ -2,7 +2,7 @@
 
 A minimalist, static URL shortener and link directory. Shortlinks redirect instantly via GitHub Pages; the index page lets you browse and search all links. Zero backend, zero database — just a static website and a custom domain.
 
-![Jinx Screenshot](jinx_screenshot.jpeg)
+![Jinx Screenshot](img/jinx_screenshot.jpeg)
 
 ## Using shortlinks
 
@@ -12,7 +12,7 @@ Navigate directly to a shortlink to be redirected:
 
 ## Searching the directory
 
-Visit [jinx.fyi](https://jinx.fyi) to browse all links. Search supports fuzzy matching and separator-insensitive queries (e.g. "my things", "my-things", and "mything" all find `my/things`). Powered by [MiniSearch](https://github.com/lucaong/minisearch) (MIT licence), self-hosted in `minisearch.js`.
+Visit [jinx.fyi](https://jinx.fyi) to browse all links. Search supports fuzzy matching and separator-insensitive queries (e.g. "my things", "my-things", and "mything" all find `my/things`). Powered by [MiniSearch](https://github.com/lucaong/minisearch) (MIT licence), self-hosted in `src/minisearch.js`.
 
 Pre-filter by appending a query param: `jinx.fyi?q=git`
 
@@ -22,7 +22,7 @@ Every link has a QR code button. Generated locally in the browser using the [Nay
 
 ## Adding a shortlink
 
-Edit [links.js](links.js) and add an entry to the `REDIRECTS` object:
+Edit [links.js](src/links.js) and add an entry to the `REDIRECTS` object:
 
 ```js
 // Simple redirect
@@ -55,14 +55,14 @@ It's free, MIT open-source licence. Do with it what you will.
 
 Fork this repo, then make two edits:
 
-### 1. `config.js` — branding & deployment
+### 1. `src/config.js` — branding & deployment
 
 ```js
 const CONFIG = {
   title: "My Links",        // shown in header and browser tab
   subtitle: "Quick Links",  // shown beside the title (or null)
   emoji: "🔗",              // decorative emoji (or null)
-  editUrl: "https://github.com/your-org/your-repo/edit/main/links.js",
+  editUrl: "https://github.com/your-org/your-repo/edit/main/src/links.js",
   customDomain: "links.example.com", // or null for GitHub Pages URL only
   repoName: "your-repo",             // your GitHub repo name
   accentColor: "violet",            // Pico CSS colour (see options in config.js)
@@ -70,7 +70,7 @@ const CONFIG = {
 };
 ```
 
-### 2. `links.js` — your shortcuts
+### 2. `src/links.js` — your shortcuts
 
 Replace the contents of `REDIRECTS` with your own links (see format above).
 
