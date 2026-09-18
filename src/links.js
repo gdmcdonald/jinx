@@ -40,6 +40,14 @@ const REDIRECTS = {
     url: 'https://github.com/gdmcdonald/jinx/fork',
     description: 'Make your own Jinx, to share your links'
   },
+  'hn': {
+    url: 'https://news.ycombinator.com/item?id=49749716',
+    description: 'Show HN post on Jinx'
+  },  
+  'r/SideProject': {
+    url: 'https://www.reddit.com/r/SideProject/s/WKaiZlOKaU',
+    description: 'Reddit r/SideProject post on Jinx'
+  },
 };
 
 // Template:
