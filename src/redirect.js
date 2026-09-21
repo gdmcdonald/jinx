@@ -31,8 +31,16 @@ function getShortlink() {
     return pathname.substring(1).replace(/\/$/, '').toLowerCase();
 }
 
+// Case-insensitive lookup, so a key stored with any casing in links.js
+// (e.g. 'SideProject') still resolves for /sideproject, /SIDEPROJECT, etc.
+// getShortlink() above already lowercases the incoming path, so we just
+// need REDIRECTS itself indexed the same way.
+const REDIRECTS_LOWER = Object.fromEntries(
+    Object.entries(REDIRECTS).map(([key, value]) => [key.toLowerCase(), value])
+);
+
 const shortlink = getShortlink();
-const redirectEntry = REDIRECTS[shortlink];
+const redirectEntry = REDIRECTS_LOWER[shortlink];
 
 let redirectUrl;
 if (redirectEntry) {
