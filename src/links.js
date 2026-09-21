@@ -47,7 +47,7 @@ const REDIRECTS = {
   'SideProject': {
     url: 'https://www.reddit.com/r/SideProject/s/WKaiZlOKaU',
     description: 'Reddit r/SideProject post on Jinx'
-  },
+  }
 };
 
 // Template:
