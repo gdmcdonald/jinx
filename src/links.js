@@ -44,7 +44,7 @@ const REDIRECTS = {
     url: 'https://news.ycombinator.com/item?id=49749716',
     description: 'Show HN post on Jinx'
   },  
-  'r/SideProject': {
+  'SideProject': {
     url: 'https://www.reddit.com/r/SideProject/s/WKaiZlOKaU',
     description: 'Reddit r/SideProject post on Jinx'
   },
