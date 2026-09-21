@@ -43,11 +43,11 @@ const REDIRECTS = {
   'hn': {
     url: 'https://news.ycombinator.com/item?id=49749716',
     description: 'Show HN post on Jinx'
-  },  
+  },
   'SideProject': {
     url: 'https://www.reddit.com/r/SideProject/s/WKaiZlOKaU',
     description: 'Reddit r/SideProject post on Jinx'
-  },  
+  },
   'awesome-list': {
     url: 'https://github.com/738/awesome-url-shortener',
     description: 'Awesome list of Url Shorteners'
